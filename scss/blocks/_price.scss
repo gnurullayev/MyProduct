@@ -1,0 +1,139 @@
+.price {
+    padding-top: 75px;
+    padding-bottom: 150px;
+    background-color:  rgba(229, 229, 229, 0.09);
+
+    &__inner {
+        width: 100%;
+        max-width: 1108px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 51px;
+    }
+
+    &__desc {
+        margin-bottom: 50px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__carts {
+        display: flex;
+        justify-content: space-between;    
+        flex-wrap: wrap;
+    }
+
+    &__cart {
+        width: 323px;
+        min-height: 456px;
+        margin-bottom: 32px;
+        padding-top: 24px;
+        background-color: $color-wight;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+
+    .carts {
+    
+        &__title {
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+        }
+    
+        &__desc {
+            margin-bottom: 16px;
+            line-height: 40px;
+        }
+    
+        &__list {
+            margin-bottom: 38px;
+        }
+    
+        &__item {
+            margin-top: 16px;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+        }
+    
+        &__button {
+            @include button(139px, 44px, $color-wight, $color-green);
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.month {
+    width: 183px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__left {
+        margin-right: 8px;
+        font-weight: 700;
+        font-size: 76px;
+        line-height: 100px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $color-green;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__dollor {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+        color: $color-green;
+    }
+
+    &__per {
+        line-height: 19px;
+        letter-spacing: 0.1px;
+        color: #afafaf;
+    }
+}
+
+@include breakpoint-down(850px) {
+    .price {
+        padding-bottom: 100px;
+
+        &__carts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;    
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@include breakpoint-down(500px) {
+    .price {
+        &__desc {
+            margin-bottom: 74px;
+        }
+
+        &__cart {
+            width: 100%;
+            max-width: 323px;
+        }
+    }
+}
+

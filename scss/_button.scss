@@ -1,0 +1,3 @@
+.button {
+    @include button(110px, 43px, $color-wight, $color-green)
+}

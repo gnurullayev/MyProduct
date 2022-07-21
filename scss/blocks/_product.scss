@@ -1,0 +1,137 @@
+.product {
+    min-height: 543px;
+   background-image: url("../../imgs/product-bg.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: calc(50%) bottom;
+
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 66px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 1095px;
+        margin: 0 auto;
+        margin-bottom: 34px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    &__item {
+        width: 240px;
+        min-height: 204px;
+        padding-top: 80px;
+        position: relative;
+    }
+
+    &__item::before{
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 19px;       
+        background-repeat: no-repeat;
+        background-position: calc(50% + 1px) center;
+        content: "";
+
+    }
+
+    &__item:nth-child(1)::before {
+        background-color: $color-green;
+        background-image: url("../../imgs/cursor.png");
+    }
+
+    &__item:nth-child(2)::before {
+        background-color: #4d8dff;
+        background-image: url("../../imgs/design-img.png");
+    }
+
+    &__item:nth-child(3)::before {
+        background-color: #740a76;
+        background-image: url("../../imgs/heart-img.png");
+    }
+
+    &__item:nth-child(4)::before {
+        background-color: #f03e3d;
+        background-image: url("../../imgs/time-img.png");
+    }
+
+    &__item-title {
+        margin-bottom: px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    &__item-desc {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    &__btn {
+        display: inline-block;
+        margin: 0 auto;
+        @include button(175px, 53px, $color-wight, $color-green)
+    }
+
+}
+
+@include breakpoint-down(530px) {
+
+    .product {
+        &__item {
+            width: 226px;
+            min-height: 204px;
+            padding-top: 80px;
+            position: relative;
+        }
+    }
+}
+
+@include breakpoint-down(500px) {
+
+    .product {
+        padding-bottom: 42px;
+        
+        &__title {
+            max-width: 332px;
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 37px;
+            width: 240px;
+            min-height: 198px;
+            padding-top: 74px;
+        }
+
+        &__item::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+

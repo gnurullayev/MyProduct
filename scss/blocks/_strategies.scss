@@ -1,0 +1,126 @@
+.strategies {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color:  rgba(229, 229, 229, 0.09);
+
+    &__inner {
+        width: 100%;
+        max-width: 1107px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 51px;
+    }
+
+    &__desc {
+        margin-bottom: 32px;
+        font-weight: 500;
+    }
+
+    &__carts {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__cart {
+        width: 100%;
+        max-width: 348px;
+        min-height: 359px;
+        margin-bottom: 16px;
+        background-color: $color-wight;
+        border-radius: 8px;
+    }
+
+
+
+}
+
+.cart:nth-child(3 ) {
+    margin-bottom: 0;
+}
+
+.cart {
+   
+
+    &__img {
+        width: 100%;
+        min-height: 185px;
+        object-fit: cover;
+    }
+
+    &__time {
+        margin-top: 24px;
+        margin-left: 24px;
+        margin-bottom: 12px;
+        line-height: 28px;
+    }
+
+    &__description {
+        max-width: 294px;
+        margin-left: 24px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.content__pagnations {
+    width: 68px;
+    min-height: 16px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.content__pagination + .content__pagination {
+    margin-left: 10px;
+}
+
+.content__pagination {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #efefef;
+}
+@include breakpoint-down(850px) {
+    .strategies {
+        padding-bottom: 61px;
+
+        &__title {
+            width: 100%;
+            max-width: 349px;
+            margin: 0 auto;
+        }
+    
+        &__desc {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        &__carts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__cart {
+            width: 100%;
+            max-width: 348px;
+            min-height: 359px;
+            margin-bottom: 16px;
+            background-color: $color-wight;
+            border-radius: 8px;
+        }
+    
+    }
+
+    .content__pagnations {
+        display: none;
+    }
+}
