@@ -25,7 +25,7 @@ let changeColor = document.querySelector(".button-back"),
 changeColor.addEventListener("click", () => {
   body.classList.toggle("body2");
   header.classList.toggle("header2");
-  product.classList.toggle("product2")
+
 
   logoText.forEach(logoText => {
     logoText.style.color = "#fff"
