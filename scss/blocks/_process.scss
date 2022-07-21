@@ -132,6 +132,7 @@
 
     &__btn {
         @include button(216px, 53px, $color-wight, $color-green);
+        display: block;
         margin: 0 auto;
     }
    

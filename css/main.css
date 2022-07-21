@@ -1197,6 +1197,7 @@ img {
   background-color: #02897a;
   border-radius: 4px;
   border: none;
+  display: block;
   margin: 0 auto;
 }
 
@@ -1681,8 +1682,8 @@ img {
     margin-top: 17px;
   }
   .business__btn {
-    margin: 0 auto;
     margin-bottom: 0px;
+    margin: 0 auto;
   }
   .business__img {
     width: 100%;
