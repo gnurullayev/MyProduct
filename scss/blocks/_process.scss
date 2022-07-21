@@ -139,6 +139,10 @@
    
 }
 
+.process2 {
+    background-image: url("../../imgs/process-bg-black.svg");
+}
+
 @include breakpoint-down(850px) {
     .process {
         &__list {

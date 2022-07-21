@@ -34,6 +34,10 @@
     width: 122px;
 }
 
+.logo__text2 {
+    color: $color-wight;
+}
+
 .header2{
     background-color: #1F2E35;
 }
@@ -65,6 +69,15 @@
 
 .nav__link:hover {
     color: $color-blue;
+}
+
+.nav__link2 {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all .4s linear;
+}
+
+.nav__link2:hover {
+    color: $color-wight;
 }
 
 .button-sign-in {
