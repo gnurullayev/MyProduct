@@ -5,14 +5,27 @@
     list-style: none;
 }
 
-body {
+.body {
     font-family: $font-poppins;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px; 
     color: $color-blue;
+    background-color: $bc-color;
 }
+
+.body2{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+    color: $color-wight;
+    background-color: #1F2E35;
+}
+
+
 
 a {
     text-decoration: none;
